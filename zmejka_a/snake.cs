@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace zmejka_a
 {
-    class snake
+    class snake:Figura
     {
+        public snake(Point tail, int leight, Direction direction)
+        {
+            for (int i = 0; i < leight; i++)
+            {
+                Point p = new Point(tail);
+                p.Move(i, direction);
+               //pList.Add( p );
+                
+            }
+        }
     }
 }
